@@ -1,8 +1,6 @@
-function App() {
+const App = () => {
 return (
-  <div>
-    Hello world!
-  </div>
+  <p>Hello world</p>
 )
 }
 
