@@ -24,7 +24,7 @@ function App() {
         features={['Feature 1', 'Feature 2', 'Feature 3']}
       />
       <PriceCard
-        title="Pro Plan"
+        title="Pro Plan" 
         price="39.99"
         features={['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4']}
       />
