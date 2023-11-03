@@ -11,6 +11,12 @@ function PriceCard(props) {
         ))}
       </ul>
       <button className="buy-button">Buy Now</button>
+      <div className="row"> 
+      <div className="column"></div> 
+      <div className="column"></div> 
+      <div className="column"></div>     
+        </div>
+
     </div>
   );
 }
@@ -18,20 +24,27 @@ function PriceCard(props) {
 function App() {
   return (
     <div className="App">
+
       <PriceCard
-        title="Basic Plan"
-        price="19.99"
-        features={['Feature 1', 'Feature 2', 'Feature 3']}
+        title="FREE"
+        price="$0/month"
+        features={['Single User', '50GB Storage', 'Unlimited public projects',
+        'community access','Unlimited private projects',
+        'Dedicated phone support','free subdomain','monthly status reports']}
       />
       <PriceCard
-        title="Pro Plan" 
-        price="39.99"
-        features={['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4']}
+        title="PLUS" 
+        price="$9/month"
+        features={['5 User', '50GB Storage', 'Unlimited public projects',
+        'community access','Unlimited private projects',
+        'Dedicated phone support','free subdomain','monthly status reports']}
       />
       <PriceCard
-        title="Premium Plan"
-        price="59.99"
-        features={['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4', 'Feature 5']}
+        title="PRO"
+        price="$49/month"
+        features={['Unlimated User', '50GB Storage', 'Unlimited public projects',
+        'community access','Unlimited private projects',
+        'Dedicated phone support','free subdomain','monthly status reports']}
       />
     </div>
   );
