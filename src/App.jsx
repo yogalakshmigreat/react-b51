@@ -1,7 +1,16 @@
-const App = () => {
+import React from 'react';
+import './App.css';
+import Main from './Main';
+
+function App() {
   return (
-    <p>Hello world</p>
-  )
-  }
-  
-  export default App;
+    <div className="App">
+      <header className="App-header">
+        <h1>React Shopping Cart</h1>
+      </header>
+      <Main />
+    </div>
+  );
+}
+
+export default App;
