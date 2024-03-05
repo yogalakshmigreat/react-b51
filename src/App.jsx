@@ -1,14 +1,33 @@
-import React from 'react';
+// App.js
+import React, { useState } from 'react';
 import './App.css';
-import Main from './Main';
+import TodoList from './TodoList';
+import TodoForm from './TodoForm';
 
 function App() {
+  const [todos, setTodos] = useState([]);
+
+  const addTodo = (todo) => {
+    setTodos([...todos, todo]);
+  };
+
+  const deleteTodo = (id) => {
+    setTodos(todos.filter(todo => todo.id !== id));
+  };
+
+  const updateTodo = (updatedTodo) => {
+    setTodos(todos.map(todo => todo.id === updatedTodo.id ? updatedTodo : todo));
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>React Shopping Cart</h1>
-      </header>
-      <Main />
+      <h1>Todo App</h1>
+      <TodoForm addTodo={addTodo} />
+      <TodoList 
+        todos={todos} 
+        deleteTodo={deleteTodo} 
+        updateTodo={updateTodo} 
+      />
     </div>
   );
 }
