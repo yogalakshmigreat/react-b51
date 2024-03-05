@@ -1,7 +1,20 @@
-const App = () => {
+// App.js
+import React from 'react';
+import './App.css';
+import ProductList from './ProductList';
+import Cart from './Cart';
+import { CartProvider } from './CartContext';
+
+function App() {
   return (
-    <p>Hello world</p>
-  )
-  }
-  
-  export default App;
+    <div className="App">
+      <h1>Shopping Cart</h1>
+      <CartProvider>
+        <ProductList />
+        <Cart />
+      </CartProvider>
+    </div>
+  );
+}
+
+export default App;

@@ -1,7 +1,13 @@
+// AllCourses.js
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
 
+function AllCourses() {
+  return (
+    <div>
+      <h2>All Courses</h2>
+      {/* Static content for all courses */}
+    </div>
+  );
+}
 
-ReactDOM.createRoot(document.getElementById('root')).
-render( <App />);
+export default AllCourses;
