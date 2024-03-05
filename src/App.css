@@ -1,21 +1,30 @@
 /* App.css */
 .App {
   text-align: center;
-  margin-top: 50px;
 }
 
-.todo-list {
+.product-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.todo {
+.product {
   border: 1px solid #ccc;
   padding: 10px;
   margin: 10px;
 }
 
-.todo input, .todo select {
-  margin-right: 10px;
+.cart {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.cart-item {
+  margin-bottom: 10px;
+}
+
+.total {
+  margin-top: 20px;
 }
