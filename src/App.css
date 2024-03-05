@@ -1,0 +1,21 @@
+/* App.css */
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.todo {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.todo input, .todo select {
+  margin-right: 10px;
+}
